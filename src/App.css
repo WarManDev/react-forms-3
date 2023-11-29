@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+}
+
+
+
+
+.containier {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addFile {
+  width: 500px;
+  height: 200px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.addFile::before {
+  content: "Click to select";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background-color: whitesmoke;
+  border: 3px solid black;
+  font-size: 30px;
+  font-weight: 400;
+  border-radius: 10px;
+}
+
+.containier-click {
+  width: 400px;
+  height: 300px;
+}
+
+.containier__photo {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.img_item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+}
+
+.img {
+    width: 150px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.material-icons {
+  transform: translate(25%, 75%);
+  align-self:end ;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  font-size: 20px;
+}
